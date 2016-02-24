@@ -1,5 +1,3 @@
-echo "Adding Aliases..."
-
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
@@ -97,5 +95,3 @@ gpip3(){
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
-
-echo "Aliases added."
