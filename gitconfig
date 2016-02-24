@@ -1,13 +1,16 @@
 [core]
 	excludesfile = /Users/matt/.gitignore_global
+	autocrlf = input
+[user]
+	name = Matt Stibbs
+	email = git@stibbsy.co.uk
+[push]
+	default = simple
+[help]
+	autocorrect = 1
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
 	cmd = /Users/matt/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[user]
-	name = Matt Stibbs
-	email = git@stibbsy.co.uk
-[push]
-	default = simple
