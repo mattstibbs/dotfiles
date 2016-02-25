@@ -26,4 +26,9 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+########## Apply OSX Configuration Changes
 source osxdefaults.sh
+sudo chmod +x osxdefaults.sh
+
+########## Install Applications
+# source applications.sh
