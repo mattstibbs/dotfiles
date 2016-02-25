@@ -32,3 +32,7 @@ sudo chmod +x osxdefaults.sh
 
 ########## Install Applications
 # source applications.sh
+
+## Set up cronjob to do a daily brew update
+#install new cron file
+crontab mycrontab
