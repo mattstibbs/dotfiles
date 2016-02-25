@@ -1,6 +1,11 @@
+# OSX Files
 *~
 .DS_Store
 .idea/
 
-# Python
+# Python Files
 *.pyc
+
+# Python virtualenvs
+env*
+venv*
