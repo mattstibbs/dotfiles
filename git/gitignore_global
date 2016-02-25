@@ -7,5 +7,5 @@
 *.pyc
 
 # Python virtualenvs
-env*
-venv*
+env*/
+venv*/
