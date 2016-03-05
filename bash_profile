@@ -40,3 +40,4 @@ unset CURRENT_SCRIPT DOTFILE
 export OS DOTFILES_DIR
 
 echo "Let's go!"
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
