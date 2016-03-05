@@ -1,1 +1,1 @@
-0 12 * * * ~/dotfiles/scripts/brewupdate.sh > /dev/null
+0 12 * * * echo "Test crontab" > /dev/null
