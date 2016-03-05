@@ -5,6 +5,7 @@
 
 # Python Files
 *.pyc
+.cache
 
 # Python virtualenvs
 env*/
