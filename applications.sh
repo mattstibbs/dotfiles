@@ -11,6 +11,7 @@ brew install wget
 ## Helpful Stuff
 brew cask install licecap
 brew cask install tripmode
+brew cask install cronnix
 
 ## Security Stuff
 brew install ssh-copy-id
