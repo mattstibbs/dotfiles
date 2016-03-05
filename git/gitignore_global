@@ -1,11 +1,30 @@
 # OSX Files
 *~
 .DS_Store
+
+# Jetbrains IntelliJ (and derivatives)
 .idea/
 
 # Python Files
 *.pyc
 .cache
+.Python
+
+# Python Distribution / packaging
+.installed.cfg
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+*.egg
 
 # Python virtualenvs
 env*/
