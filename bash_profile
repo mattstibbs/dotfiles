@@ -1,4 +1,6 @@
 # If not running interactively, don't do anything
+#!/usr/bin/env bash
+
 
 [ -z "$PS1" ] && return
 
