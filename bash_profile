@@ -22,11 +22,14 @@ fi
 # Finally we can source the dotfiles (order matters)
 
 for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,nvm,rvm,custom,private_env}; do
+    echo "Loading $DOTFILE"
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
 if [ "$OS" = "OSX" ]; then
+	echo "Loading dotfiles in OSX mode"
     for DOTFILE in "$DOTFILES_DIR"/system/.{env,private_env,alias,function}.osx; do
+        echo "Loading $DOTFILE"
         [ -f "$DOTFILE" ] && . "$DOTFILE"
     done
 fi
@@ -38,6 +41,9 @@ unset CURRENT_SCRIPT DOTFILE
 # Export
 
 export OS DOTFILES_DIR
+
+# Virtualenv
+source /usr/local/bin/virtualenvwrapper.sh
 
 echo "Let's go!"
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
