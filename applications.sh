@@ -35,5 +35,8 @@ brew install sqlite
 brew cask install skype 
 brew cask install slack
 
+# Productivity Tools
+brew cask install doitim
+
 ## Multimedia Stuff
 brew install youtube-dl
