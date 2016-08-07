@@ -9,10 +9,10 @@
 [help]
 	autocorrect = 1
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	cmd = /Applications/PyCharm.app/Contents/MacOS/pycharm diff $LOCAL $REMOTE
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Users/matt/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/PyCharm.app/Contents/MacOS/pycharm merge $LOCAL $REMOTE $ BASE $MERGED
 	trustExitCode = true
 [credential]
 	helper = osxkeychain
