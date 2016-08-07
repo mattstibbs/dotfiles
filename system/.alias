@@ -31,10 +31,16 @@ alias ll="ls -lA $LS_COLORS"
 alias lt="ls -lhAtr $LS_COLORS $LS_TIMESTYLEISO $LS_GROUPDIRSFIRST"
 alias ld="ls -ld $LS_COLORS */"
 
+# Ask for confirmation when using rm/srm command
+alias rm='rm -i'
+alias srm='srm -i'
+
 unset LS_COLORS LS_TIMESTYLEISO LS_GROUPDIRSFIRST
 
 # Network
 alias ipl="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
+
+alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder; echo "DNS Flushed"'
 
 # Miscellaneous
 alias quit="exit"
@@ -81,6 +87,9 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Check battery level
+alias batt="pmset -g batt"
 
 
 ## Python Stuff
