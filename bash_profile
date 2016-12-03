@@ -1,7 +1,6 @@
 # If not running interactively, don't do anything
 #!/usr/bin/env bash
 
-
 [ -z "$PS1" ] && return
 
 # OS
@@ -32,6 +31,10 @@ if [ "$OS" = "OSX" ]; then
         [ -f "$DOTFILE" ] && . "$DOTFILE"
     done
 fi
+#
+# if [ -f $(brew --prefix)/etc/bash_completion ]; then
+#     source $(brew --prefix)/etc/bash_completion
+# fi
 
 # Clean up
 unset CURRENT_SCRIPT DOTFILE
@@ -43,5 +46,5 @@ export OS DOTFILES_DIR
 source /usr/local/bin/virtualenvwrapper.sh
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-echo "Let's go!"
 
+echo "Let's go!"
