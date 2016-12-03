@@ -39,12 +39,12 @@ for file in $gitfiles; do
 done
 
 ########## Apply OSX Configuration Changes
-source scripts/osxdefaults.sh
-sudo chmod +x scripts/osxdefaults.sh
+#source scripts/osxdefaults.sh
+#sudo chmod +x scripts/osxdefaults.sh
 
 ########## Install Applications
 # source applications.sh
 
 ## Set up cronjob to do a daily brew update
 #install new cron file
-crontab mycrontab
+#crontab mycrontab
