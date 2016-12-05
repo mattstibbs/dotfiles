@@ -23,7 +23,7 @@ echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
+# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 for file in $files; do
     echo "Moving any existing dotfiles from ~ to $olddir"
     mv ~/.$file ~/dotfiles_old/
@@ -39,11 +39,15 @@ for file in $gitfiles; do
 done
 
 ########## Apply OSX Configuration Changes
-#source scripts/osxdefaults.sh
-#sudo chmod +x scripts/osxdefaults.sh
+#sudo chmod +x scripts/install_osxdefaults.sh
+#source scripts/install_osxdefaults.sh
+
 
 ########## Install Applications
-# source applications.sh
+# source scripts/install_applications.sh
+
+######### Install Python
+source scripts/install_python.sh
 
 ## Set up cronjob to do a daily brew update
 #install new cron file
