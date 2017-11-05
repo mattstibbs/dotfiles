@@ -1,3 +1,13 @@
+#!/usr/bin/env bash
+
+function _update_ps1() {
+    PS1="$(powerline-shell $?)"
+}
+
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
 # If not running interactively, don't do anything
 #!/usr/bin/env bash
 
@@ -22,12 +32,12 @@ fi
 
 # Finally we can source the dotfiles (order matters)
 
-for DOTFILE in "$DOTFILES_DIR"/system/.{path,env,private_env,alias,prompt}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{path,env,private_env,alias,}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
 if [ "$OS" = "OSX" ]; then
-    for DOTFILE in "$DOTFILES_DIR"/system/.{env,private_env,alias,prompt}.osx; do
+    for DOTFILE in "$DOTFILES_DIR"/system/.{env,private_env,alias,}.osx; do
         [ -f "$DOTFILE" ] && . "$DOTFILE"
     done
 fi
@@ -43,8 +53,9 @@ unset CURRENT_SCRIPT DOTFILE
 export OS DOTFILES_DIR
 
 # Virtualenv
-source /usr/local/bin/virtualenvwrapper.sh
+# source /usr/local/bin/virtualenvwrapper.sh
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 echo "Let's go!"
+eval $(/usr/libexec/path_helper -s)
