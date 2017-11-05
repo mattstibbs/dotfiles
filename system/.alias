@@ -95,8 +95,8 @@ alias batt="pmset -g batt"
 ## Python Stuff
 
 # Override environment variable to run pip when no virtualenv is activated
-gpip(){
-   PIP_REQUIRE_VIRTUALENV="" pip "$@"
+gpip2(){
+   PIP_REQUIRE_VIRTUALENV="" pip2 "$@"
 }
 
 gpip3(){
