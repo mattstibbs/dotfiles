@@ -26,10 +26,11 @@ alias -- -="cd -"
 alias listaliases="alias | sed 's/=.*//'"
 alias listfunctions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'" # show non _prefixed functions
 
-alias l="ls -lahA $LS_COLORS $LS_TIMESTYLEISO $LS_GROUPDIRSFIRST"
-alias ll="ls -lA $LS_COLORS"
-alias lt="ls -lhAtr $LS_COLORS $LS_TIMESTYLEISO $LS_GROUPDIRSFIRST"
-alias ld="ls -ld $LS_COLORS */"
+alias ls="ls -GFhaA $LS_COLORS $LS_TIMESTYLEISO $LS_GROUPDIRSFIRST"
+alias ll="ls -GFhlaA $LS_COLORS $LS_TIMESTYLEISO $LS_GROUPDIRSFIRST"
+alias lt="ls -GFlhaAtr $LS_COLORS $LS_TIMESTYLEISO $LS_GROUPDIRSFIRST"
+alias ld="ls -GFlda $LS_COLORS $LS_TIMESTYLEISO */"
+alias lsd="ls -GFhdaA $LS_COLORS $LS_TIMESTYLEISO */"
 
 # Ask for confirmation when using rm/srm command
 alias rm='rm -i'
