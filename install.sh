@@ -4,7 +4,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bash_profile bashrc inputrc"    # list of files/folders to symlink in homedir
+files="bash_profile bashrc inputrc profile"    # list of files/folders to symlink in homedir
 
 gitdir=~/dotfiles/git
 gitfiles="gitignore_global gitconfig"
@@ -47,7 +47,7 @@ done
 # source scripts/install_applications.sh
 
 ######### Install Python
-source scripts/install_python.sh
+# source scripts/install_python.sh
 
 ## Set up cronjob to do a daily brew update
 #install new cron file
