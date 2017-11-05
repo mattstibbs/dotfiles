@@ -31,4 +31,6 @@ set convert-meta off
 
 # Filtered history search
 "\e[A": history-search-backward
-"\e[B": history-search-forward
+"\e[B": history-search-forwardset expand-tilde on
+set show-all-if-ambiguous on
+set -o vi
