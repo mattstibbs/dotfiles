@@ -38,16 +38,19 @@ for file in $gitfiles; do
     ln -s $gitdir/$file ~/.$file
 done
 
+
 ########## Apply OSX Configuration Changes
 #sudo chmod +x scripts/install_osxdefaults.sh
 #source scripts/install_osxdefaults.sh
-
 
 ########## Install Applications
 # source scripts/install_applications.sh
 
 ######### Install Python
 # source scripts/install_python.sh
+
+######### Install Powerline-Shell
+# source scripts/install_powerline.sh
 
 ## Set up cronjob to do a daily brew update
 #install new cron file
