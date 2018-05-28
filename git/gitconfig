@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /Users/mattstibbs/.gitignore_global
+	excludesfile = /Users/matt/.gitignore_global
 	autocrlf = input
 [user]
 	name = Matt Stibbs
