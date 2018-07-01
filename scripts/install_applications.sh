@@ -7,6 +7,44 @@ brew upgrade
 ## Terminal Tools
 brew install wget
 
+## The staples
+brew install python3
+
+brew cask install iterm2
+brew cask install google-chrome
+
+# Organising life tools
+brew cask install evernote
+brew cask install alfred
+brew cask install doitim
+
+# Dev tools
+brew cask install jetbrains-toolbox
+brew cask install visual-studio-code
+brew cask install postman
+brew cask install sourcetree
+
+# Cloud tools
+brew cask install dropbox
+brew cask install insync
+brew cask install onedrive
+
+# Chat tools
+brew cask install skype
+brew cask install slack
+brew cask install ryver
+
+brew cask install pgadmin4
+
+# Devops Tools
+brew install awscli
+brew install heroku-toolbelt
+brew install terraform
+brew cask install docker
+brew cask install kitematic
+brew cask install virtualbox
+brew cask install vagrant
+
 ## Helpful Stuff
 brew cask install licecap
 brew cask install cronnix
@@ -15,15 +53,9 @@ brew cask install cronnix
 brew install ssh-copy-id
 brew install openssl
 
-## Python
-brew install python
-brew install python3
-# brew install autoenv
 
 ## Development Tools
-brew install heroku-toolbelt
 brew install postgresql
-brew cask install pgadmin4
 brew install libevent
 brew install libmemcached
 brew install redis
@@ -31,51 +63,29 @@ brew install sqlite
 brew cask install sqlitebrowser
 
 ## Development Tools
-brew cask install atom
-brew cask install pycharm
-brew cask install webstorm
-brew cask install datagrip
-brew cask install xmplify
-brew cask install postman
-brew cask install sourcetree
-brew cask install kitematic
+# brew cask install xmplify
 
 ## Communication Tools
-brew cask install skype
-brew cask install slack
-brew cask install adium
-brew cask install ryver
 
 # Productivity Tools
-brew cask install doitim # Task manager
-brew cask install evernote
-brew cask install alfred
-brew cask install omnigraffle
+# brew cask install omnigraffle
 
 # Security
 brew cask install torbrowser
-brew cask install freedome
-brew cask install tunnelblick
+# brew cask install tunnelblick
 
-# Cloud Sync Tools
-brew cask install dropbox
-brew cask install insync
-brew cask install arq
+# Cloud Sync
+
+# brew cask install arq
 # brew cask install google-drive
 
-# Photography Applications
+# Photography
 # brew cask install adobe-creative-cloud
 
 # System Tools
-brew cask install iterm2
-brew cask install path-finder # Alternative file browser app
-brew cask install flux # Automatically reduces blue light at night
-brew cask install tripmode # For restricting bandwidth usage when on hotspots
-brew cask install filezilla
 # brew cask install parallels-desktop
-brew cask install cleanmymac
 
 ## Multimedia Stuff
 #brew install youtube-dl
-brew cask install sonos
-brew cask install spotify
+# brew cask install sonos
+# brew cask install spotify
