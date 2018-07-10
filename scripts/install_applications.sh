@@ -9,6 +9,7 @@ brew install wget
 
 ## The staples
 brew install python3
+brew install pipenv
 
 brew cask install iterm2
 brew cask install google-chrome
