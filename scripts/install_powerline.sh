@@ -1,5 +1,7 @@
 #!/bin/bash
 
+gpip3 install powerline-shell
+
 cd ~
 rm -rf fonts/
 gpip3 install powerline-shell
