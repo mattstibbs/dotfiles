@@ -2,6 +2,9 @@
 *~
 .DS_Store
 
+# VS Code
+.vscode/
+
 # Jetbrains IntelliJ (and derivatives)
 .idea/
 

@@ -47,5 +47,7 @@ export OS DOTFILES_DIR
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
-echo "Let's go!"
 eval $(/usr/libexec/path_helper -s)
+eval "$(rbenv init -)"
+
+echo "Let's go!"
