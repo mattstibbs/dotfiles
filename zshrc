@@ -10,6 +10,13 @@ export ZSH="/Users/matt/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="agnoster"
+# ZSH_THEME_RANDOM_CANDIDATES=(
+#   "robbyrussell"
+#   "agnoster"
+#   "spaceship"
+#   "powerlevel10k/powerlevel10k"
+# )
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -104,6 +111,7 @@ export LANG=en_GB.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/Users/matt/.pyenv/bin:$PATH"
 
 # Created by `userpath` on 2019-10-29 11:52:58
 export PATH="$PATH:/Users/matt/.local/bin"
@@ -124,3 +132,4 @@ compinit
 
 ## Initialise pyenv
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

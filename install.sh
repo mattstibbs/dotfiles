@@ -4,7 +4,8 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bash_profile bashrc inputrc profile zshrc"    # list of files/folders to symlink in homedir
+# files="bash_profile bashrc inputrc profile zshrc"    # list of files/folders to symlink in homedir
+files="zshrc"    # list of files/folders to symlink in homedir
 
 gitdir=~/dotfiles/git
 gitfiles="gitignore_global gitconfig"
